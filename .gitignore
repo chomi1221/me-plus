@@ -91,3 +91,6 @@ sw.*
 
 # node
 .node-version
+
+# Firebase cache
+.firebase/**.cache
