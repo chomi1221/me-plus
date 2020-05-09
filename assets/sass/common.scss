@@ -1,3 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+
 body {
-  background-color: $color-bg;
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    &.black {
+      font-weight: 900;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .btn,
+  input[type="button"] {
+    background: black;
+    border: 0;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  main {
+    background: $color-bg;
+    height: 100vh;
+    position: relative;
+    > p {
+      position: absolute;
+      top: 65%;
+      left: 0;
+      right: 0;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .scroll {
+      position: absolute;
+      bottom: 48px;
+      left: 0;
+      right: 0;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+      }
+      img {
+        width: 34px;
+        height: 56px;
+      }
+    }
+  }
+
+  section {
+    .inner {
+      padding: 48px 0;
+      > h1 {
+        font-size: 48px;
+        line-height: 72px;
+      }
+    }
+
+    &#about {
+      .logo {
+        margin: 36px auto;
+        p {
+          margin-bottom: 16px;
+        }
+        img {
+          width: 238px;
+        }
+      }
+    }
+
+    &#joinus {
+      .btn {
+        padding: 16px 36px;
+        width: max-content;
+        margin: 24px auto 0;
+        border-radius: 68px;
+        a {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    &#contact {
+      background: $color-bg;
+      .inner > p {
+        margin: 8px 0 24px;
+      }
+      form {
+        padding: 0 24px;
+        > * {
+          display: block;
+          margin-bottom: 24px;
+        }
+        input {
+          &::placeholder {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-text-gray;
+          }
+          &.email,
+          &.name {
+            width: 100%;
+            height: 60px;
+            border: 0;
+            border-bottom: 4px solid black;
+            padding-left: 58px;
+          }
+          &.email {
+            background: url(../img/icon_envelope.svg) no-repeat left 24px center / 22px 24px white;
+          }
+          &.name {
+            background: url(../img/icon_user.svg) no-repeat left 24px center / 22px 24px white;
+          }
+          &[type="button"] {
+            padding: 16px 36px 16px 70px;
+            margin: 0 auto;
+            border-radius: 68px;
+            background: url(../img/icon_telegram-plane.svg) no-repeat left 36px center / 22px 24px black;
+            &::value {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+        textarea {
+          width: 100%;
+          height: 180px;
+          border: 0;
+          border-bottom: 4px solid black;
+          padding: 24px;
+          &::placeholder {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-text-gray;
+          }
+        }
+      }
+    }
+  }
 }
