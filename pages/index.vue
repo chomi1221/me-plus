@@ -1,9 +1,7 @@
 <template>
   <div>
     <main>
-      <figure>
-        <img src="~/assets/img/kv_main.jpg" alt="kv_main" />
-      </figure>
+      <div class="kv"></div>
       <p class="center">好きを仕事に</p>
       <div class="scroll center">
         <p class="montserrat">Scroll</p>
